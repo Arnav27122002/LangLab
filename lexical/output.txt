@@ -1,0 +1,21 @@
+SAMPLE START 1000 
+MOV AX 1  
+start1 MOV BX 2  
+GAMMA MOV CX 3  
+LDA N1  
+Add A1 5 
+BUFF1 STA N2  
+Add N3  N4  
+MOV AX 5  
+start2 MOV BX 6  
+GAMMA MOV CX 7  
+MOV AX 4  
+start3 MOV BX 5  
+GAMMA MOV CX DX  
+LDA A  
+Add A1 5 
+BUFF2 STA B  
+Add C  D  
+N1 RESW 1 
+N2 RESW 1 
+END

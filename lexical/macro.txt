@@ -1,0 +1,10 @@
+RDBUFF MACRO &par1,&par2,&par3
+MOV &par1,&par2
+ADD &par1,&par3
+MOV &par1,&par2
+MEND
+LIMIT MACRO &par1,&par2
+MOV &par1,&par2
+MEND
+RDBUFF &f3,&buf,&lt
+END

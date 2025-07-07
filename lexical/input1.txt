@@ -1,0 +1,22 @@
+SAMPLE START 1000
+EX1 MACRO &A, &B, &C, &D
+LDA &A
+   Add A1, 5
+    BUFF$ STA &B
+    Add &C,&D
+MEND
+
+myMacro MACRO &p1, &p2, &p3
+         GAMMA$ MOV AX, &p1
+        start$ MOV BX, &p2
+        MOV CX, &p3
+MEND
+
+myMacro 1, 2, 3
+EX1 N1,N2,N3,N4
+myMacro 5,6,7
+myMacro 4, 5, DX
+EX1 A,B,C,D
+N1 RESW 1
+N2 RESW 1
+END

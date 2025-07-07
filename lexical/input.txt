@@ -1,0 +1,14 @@
+COPY    START   1000
+GAMMA   LDA     ALPHA
+        ADD     ONE
+        SUB     TWO
+        STA     BETA
+        RSUB
+ALPHA   BYTE    C'HELLO'
+ONE     RESB    2
+FOUR    BYTE    C'CUCEK'
+TWO     WORD    5
+BETA    RESW    1
+HEXVAL  BYTE    X'1F'
+        RSUB
+        END
